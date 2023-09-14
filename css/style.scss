@@ -47,14 +47,24 @@ header {
   // margin-right: 298px;
 
   @media (min-width: 1200px) {
-    margin-left: -50px;
-    margin-right: 0px;
+    // margin-left: -50px;
+    // margin-right: 0px;
+    margin-left: 299px;
+    margin-right: 298px;
+  }
+
+  @media (min-width: 1400px) {
+    // margin-left: -85px;
+    // margin-right: 0px;
+    margin-left: 290px;
+    margin-right: 298px;
   }
 
   @media (min-width: 2100px) {
-    margin-left: -85px;
-    margin-right: 0px;
-    
+    // margin-left: -85px;
+    // margin-right: 0px;
+    margin-left: 200px;
+    margin-right: 298px;
   }
 
   .logotype {
@@ -67,9 +77,14 @@ header {
       margin-right: -1%;
     }
 
+    @media (min-width: 1400px) {
+      margin-left: 0;
+      margin-right: -50px;
+    }
+
     @media (min-width: 2100px) {
-      margin-left: 15%;
-      margin-right: -1%;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     
@@ -101,7 +116,7 @@ header {
     @media (min-width: 1200px) {
       display: block;
       margin-left: 299px;
-      margin-right: 298px;
+      // margin-right: 298px;
       
     }
   
@@ -115,6 +130,8 @@ header {
       @media (min-width: 1200px) {
         justify-content: space-between;
       }
+
+     
 
       .contact-information {
         display: none;

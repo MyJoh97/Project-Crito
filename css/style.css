@@ -39,14 +39,20 @@ header .container {
 }
 @media (min-width: 1200px) {
   header .container {
-    margin-left: -50px;
-    margin-right: 0px;
+    margin-left: 299px;
+    margin-right: 298px;
+  }
+}
+@media (min-width: 1400px) {
+  header .container {
+    margin-left: 290px;
+    margin-right: 298px;
   }
 }
 @media (min-width: 2100px) {
   header .container {
-    margin-left: -85px;
-    margin-right: 0px;
+    margin-left: 200px;
+    margin-right: 298px;
   }
 }
 @media (min-width: 990px) {
@@ -55,10 +61,16 @@ header .container {
     margin-right: -1%;
   }
 }
+@media (min-width: 1400px) {
+  header .container .logotype {
+    margin-left: 0;
+    margin-right: -50px;
+  }
+}
 @media (min-width: 2100px) {
   header .container .logotype {
-    margin-left: 15%;
-    margin-right: -1%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 header .container .menu-bars {
@@ -88,7 +100,6 @@ header .container .menu {
   header .container .menu {
     display: block;
     margin-left: 299px;
-    margin-right: 298px;
   }
 }
 header .container .menu .top-menu {
