@@ -334,10 +334,19 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   border: 1px solid #F9D783;
   color: #191919;
   text-decoration: none;
-  padding: 12px 25px;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
+}
+@media (min-width: 1200px) {
+  .adv {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+  }
 }
 
 .advertising {
@@ -351,32 +360,69 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   }
 }
 
-.features {
+.left-box {
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: auto;
   margin-right: auto;
   border: solid 1px black;
-  padding-top: 161px;
+  padding-top: 0;
   height: auto;
   width: auto;
 }
-@media (min-width: 1400px) {
-  .features {
-    padding-top: 161px;
-    margin-top: 105px;
+@media (min-width: 800px) {
+  .left-box {
+    padding-top: 0;
+    margin-top: 25px;
+    height: auto;
+    width: auto;
+  }
+}
+@media (min-width: 1520px) {
+  .left-box {
+    padding-top: 81px;
+    padding-bottom: 216px;
     height: 600px;
     width: 1520px;
   }
 }
-.features .accounting {
+@media (min-width: 1700px) {
+  .left-box {
+    padding-top: 81px;
+    padding-bottom: 216px;
+    height: 600px;
+    width: 1520px;
+  }
+}
+.left-box .accounting {
   border: solid 1px black;
   margin-right: auto;
+  padding-left: 30px;
+  padding-right: 25px;
 }
-.features .accounting h4 {
+@media (min-width: 1200px) {
+  .left-box .accounting {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.left-box .accounting h4 {
   font-family: inter;
   font-size: 18px;
   font-weight: 500;
   color: #F94D1C;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .left-box .accounting h4 {
+    text-align: left;
+    margin-top: 5px;
+  }
+}
+.left-box .accounting h2 {
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .left-box .accounting h2 {
+    text-align: none;
+  }
 }
