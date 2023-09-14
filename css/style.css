@@ -383,6 +383,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
     padding-bottom: 216px;
     height: 600px;
     width: 1520px;
+    padding-left: 100px;
   }
 }
 @media (min-width: 1700px) {
@@ -401,8 +402,8 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 }
 @media (min-width: 1200px) {
   .left-box .accounting {
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: 120px;
+    margin-right: 900px;
   }
 }
 .left-box .accounting h4 {
@@ -420,9 +421,15 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 }
 .left-box .accounting h2 {
   text-align: center;
+  font-family: sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
 }
 @media (min-width: 1200px) {
   .left-box .accounting h2 {
-    text-align: none;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
   }
 }
