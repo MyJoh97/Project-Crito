@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Inter:wght@300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap');
 
 html, body {
@@ -410,12 +410,13 @@ header {
   padding-top: 16px;
   font-weight: 600;
   font-size: 16px;
-  border-radius: 25px;
+  border-radius: 40px;
 
   @media (min-width: 1200px) {
     display: flex;
     justify-content: center;
-    padding-top: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     }
 
 }
@@ -427,6 +428,7 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 99px;
+  gap: 50px;
   
   }
   
@@ -474,12 +476,17 @@ header {
     .accounting {
       border: solid 1px black;
       margin-right: auto;
-      padding-left: 30px;
+      padding-left:30px;
       padding-right: 25px;
       
       @media (min-width: 1200px) {
-        margin-left: 120px;
-        margin-right: 900px;
+        margin-right: block;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 60px;
+        margin-right: auto;
+        height: 500px;
+        width: 440px;
       }
 
       h4 { 
@@ -488,11 +495,12 @@ header {
       font-size: 18px;
       font-weight: 500;
       color: #F94D1C;
+      opacity: 1.00;
       text-align: center;
 
       @media (min-width: 1200px) {
         text-align: left;
-        margin-top: 5px;
+        margin-top: 15px;
       }
       
       }
@@ -509,8 +517,83 @@ header {
           font-size: 45px;
           font-weight: bold;
           text-align: left;
+          margin-top: 30px;
+          margin-bottom: 50px;
+          
         }
       }
+
+    }
+
+    .right-side {
+      border: solid 1px black;
+      display: none;
+      
+      
+      @media (min-width: 1200px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 110px;
+        margin-right: auto;
+        margin-bottom: auto;
+      }
+
+      @media (min-width: 1500px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 110px;
+        margin-right: 270px;
+        margin-bottom: 110px;
+      }
+      
+      
+     
+      
+
+      .business {
+        
+        
+        @media (min-width: 1200px) {
+          padding: 20px;
+          text-align: left;
+          
+        }
+        
+        
+        
+        
+        h5 {
+          font-family: sans-serif;
+          font-size: 22px;
+          font-weight: bold;
+          line-height: 33px;
+          color: #191919;
+          opacity: 1.00;
+          margin-bottom: 15px;
+          
+        }
+
+        p {
+          font-family: "inter";
+          font-size: 16px;
+          font-weight: normal;
+          text-align: left;
+          line-height: 25px;
+          color: RGBA(25,25,25,0.7 );
+          // letter-spacing: -10px;
+
+        }
+
+        img {
+          margin-bottom: -28px;
+          margin-top: 35px;
+        }
+
+       
+      }
+
 
     }
 
