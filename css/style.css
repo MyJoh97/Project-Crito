@@ -729,3 +729,247 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
     margin-left: 103px;
   }
 }
+
+.service-boxes {
+  background-color: #F0EFE9;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .service-boxes {
+    height: 850px;
+  }
+}
+.service-boxes .services {
+  display: none;
+  position: absolute;
+  height: 145px;
+  width: 504px;
+  text-align: left;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1200px) {
+  .service-boxes .services {
+    display: none;
+    position: absolute;
+    margin-right: 500px;
+    margin-left: -325px;
+    height: 145px;
+    width: 504px;
+  }
+}
+@media (min-width: 1400px) {
+  .service-boxes .services {
+    display: block;
+  }
+}
+@media (min-width: 2000px) {
+  .service-boxes .services {
+    position: absolute;
+    margin-right: 500px;
+    margin-left: -325px;
+    height: 145px;
+    width: 504px;
+  }
+}
+.service-boxes .services h6 {
+  color: #F94D1C;
+  font-size: 18px;
+  font-family: "inter";
+  font-weight: 500;
+  line-height: 22px;
+  margin-top: 0;
+}
+.service-boxes .services h3 {
+  color: #191919;
+  font-size: 45px;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 54px;
+  position: absolute;
+  margin-top: -21px;
+}
+.service-boxes .boxes {
+  display: none;
+  gap: 30px;
+  margin-top: 314px;
+  margin-left: 300px;
+  margin-bottom: auto;
+}
+@media (min-width: 1400px) {
+  .service-boxes .boxes {
+    display: block;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 2000px) {
+  .service-boxes .boxes {
+    margin-left: 610px;
+    display: block;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.service-boxes .boxes .box1 {
+  display: block;
+  height: 333px;
+  width: 308px;
+  background-color: #ffffff;
+}
+.service-boxes .boxes .box1 hr {
+  position: relative;
+  top: 50px;
+  margin-left: 30px;
+  height: 1.5px;
+  width: 35px;
+  background-color: black;
+  color: #191919;
+}
+.service-boxes .boxes .box1 h5 {
+  color: #191919;
+  font-family: dm sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  margin-top: 84px;
+  margin-left: 30px;
+}
+.service-boxes .boxes .box1 p {
+  color: RGBA(25, 25, 25, 0.7);
+  font-size: 16px;
+  font-family: "inter";
+  font-weight: normal;
+  line-height: 28px;
+  position: relative;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.service-boxes .boxes .box2 {
+  background-color: #F9D783;
+  height: 333px;
+  width: 308px;
+}
+.service-boxes .boxes .box2 hr {
+  position: relative;
+  top: 50px;
+  margin-left: 30px;
+  height: 1.5px;
+  width: 35px;
+  background-color: black;
+  color: #191919;
+}
+.service-boxes .boxes .box2 h5 {
+  color: #191919;
+  font-family: dm sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  margin-top: 84px;
+  margin-left: 30px;
+}
+.service-boxes .boxes .box2 p {
+  color: RGBA(25, 25, 25, 0.7);
+  font-size: 16px;
+  font-family: "inter";
+  font-weight: normal;
+  line-height: 28px;
+  position: relative;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.service-boxes .boxes .box3 {
+  height: 333px;
+  width: 308px;
+  background-color: #ffffff;
+}
+.service-boxes .boxes .box3 hr {
+  position: relative;
+  top: 50px;
+  margin-left: 30px;
+  height: 1.5px;
+  width: 35px;
+  background-color: black;
+  color: #191919;
+}
+.service-boxes .boxes .box3 h5 {
+  color: #191919;
+  font-family: dm sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  margin-top: 84px;
+  margin-left: 30px;
+}
+.service-boxes .boxes .box3 p {
+  color: RGBA(25, 25, 25, 0.7);
+  font-size: 16px;
+  font-family: "inter";
+  font-weight: normal;
+  line-height: 28px;
+  position: relative;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.service-boxes .boxes .box4 {
+  height: 333px;
+  width: 308px;
+  background-color: #ffffff;
+}
+.service-boxes .boxes .box4 hr {
+  position: relative;
+  top: 50px;
+  margin-left: 30px;
+  height: 1.5px;
+  width: 35px;
+  background-color: black;
+  color: #191919;
+}
+.service-boxes .boxes .box4 h5 {
+  color: #191919;
+  font-family: dm sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  margin-top: 84px;
+  margin-left: 30px;
+}
+.service-boxes .boxes .box4 p {
+  color: RGBA(25, 25, 25, 0.7);
+  font-size: 16px;
+  font-family: "inter";
+  font-weight: normal;
+  line-height: 28px;
+  position: relative;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.service-boxes .boxes .btn-round {
+  background-color: #191919;
+  border-radius: 50%;
+  padding: 18px 22px;
+  position: absolute;
+  margin-left: 215px;
+  margin-bottom: 48px;
+}
+.service-boxes .boxes .btn-round i {
+  color: #ffffff;
+  font-size: 21px;
+}
+.service-boxes .boxes .btn-round:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  background-color: #6e6e6e;
+}
+.service-boxes .boxes .highlight:hover {
+  height: 343px;
+  width: 318px;
+  transform: scale(1.05);
+  background-color: rgb(221, 219, 219);
+  transition: transform 0.8s;
+}
