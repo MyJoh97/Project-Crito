@@ -822,16 +822,8 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   width: 308px;
   background-color: #ffffff;
 }
-.service-boxes .boxes .box1 hr {
-  position: relative;
-  top: 50px;
-  margin-left: 30px;
-  height: 1.5px;
-  width: 35px;
-  background-color: black;
-  color: #191919;
-}
 .service-boxes .boxes .box1 h5 {
+  position: relative;
   color: #191919;
   font-family: dm sans-serif;
   font-size: 22px;
@@ -839,6 +831,15 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   line-height: 33px;
   margin-top: 84px;
   margin-left: 30px;
+}
+.service-boxes .boxes .box1 h5::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 38px;
+  height: 2px;
+  background-color: #191919;
 }
 .service-boxes .boxes .box1 p {
   color: RGBA(25, 25, 25, 0.7);
@@ -855,16 +856,8 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   height: 333px;
   width: 308px;
 }
-.service-boxes .boxes .box2 hr {
-  position: relative;
-  top: 50px;
-  margin-left: 30px;
-  height: 1.5px;
-  width: 35px;
-  background-color: black;
-  color: #191919;
-}
 .service-boxes .boxes .box2 h5 {
+  position: relative;
   color: #191919;
   font-family: dm sans-serif;
   font-size: 22px;
@@ -872,6 +865,15 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   line-height: 33px;
   margin-top: 84px;
   margin-left: 30px;
+}
+.service-boxes .boxes .box2 h5::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 38px;
+  height: 2px;
+  background-color: #191919;
 }
 .service-boxes .boxes .box2 p {
   color: RGBA(25, 25, 25, 0.7);
@@ -888,16 +890,8 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   width: 308px;
   background-color: #ffffff;
 }
-.service-boxes .boxes .box3 hr {
-  position: relative;
-  top: 50px;
-  margin-left: 30px;
-  height: 1.5px;
-  width: 35px;
-  background-color: black;
-  color: #191919;
-}
 .service-boxes .boxes .box3 h5 {
+  position: relative;
   color: #191919;
   font-family: dm sans-serif;
   font-size: 22px;
@@ -905,6 +899,15 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   line-height: 33px;
   margin-top: 84px;
   margin-left: 30px;
+}
+.service-boxes .boxes .box3 h5::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 38px;
+  height: 2px;
+  background-color: #191919;
 }
 .service-boxes .boxes .box3 p {
   color: RGBA(25, 25, 25, 0.7);
@@ -921,16 +924,8 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   width: 308px;
   background-color: #ffffff;
 }
-.service-boxes .boxes .box4 hr {
-  position: relative;
-  top: 50px;
-  margin-left: 30px;
-  height: 1.5px;
-  width: 35px;
-  background-color: black;
-  color: #191919;
-}
 .service-boxes .boxes .box4 h5 {
+  position: relative;
   color: #191919;
   font-family: dm sans-serif;
   font-size: 22px;
@@ -938,6 +933,15 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   line-height: 33px;
   margin-top: 84px;
   margin-left: 30px;
+}
+.service-boxes .boxes .box4 h5::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 38px;
+  height: 2px;
+  background-color: #191919;
 }
 .service-boxes .boxes .box4 p {
   color: RGBA(25, 25, 25, 0.7);
