@@ -7,6 +7,12 @@ html, body {
   font-weight: 400;
 }
 
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
 .btn-yellow {
   background-color: #F9D783;
   border: 1px solid #F9D783;
@@ -26,156 +32,166 @@ html, body {
   border: 1px solid #191919;
   color: #F0EFE9;
 }
+@media (min-width: 1200px) {
+  .btn-yellow {
+    margin-right: 130px;
+  }
+}
+@media (min-width: 1500px) {
+  .btn-yellow {
+    margin-right: 190px;
+  }
+}
+@media (min-width: 1700px) {
+  .btn-yellow {
+    margin-right: 250px;
+  }
+}
+@media (min-width: 1800px) {
+  .btn-yellow {
+    margin-right: 280px;
+  }
+}
 
 header {
   background-color: #F0EFE9;
   padding: 16px;
 }
 header .container {
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
-  gap: 70px;
-  margin-left: auto;
-  margin-right: auto;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "logo bars";
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   header .container {
-    margin-left: 299px;
-    margin-right: 298px;
-  }
-}
-@media (min-width: 1400px) {
-  header .container {
-    margin-left: 290px;
-    margin-right: 298px;
-  }
-}
-@media (min-width: 2100px) {
-  header .container {
-    margin-left: 200px;
-    margin-right: 298px;
-  }
-}
-@media (min-width: 990px) {
-  header .container .logotype {
-    margin-left: 19%;
-    margin-right: -1%;
-  }
-}
-@media (min-width: 1400px) {
-  header .container .logotype {
-    margin-left: 0;
-    margin-right: -50px;
-  }
-}
-@media (min-width: 2100px) {
-  header .container .logotype {
-    margin-left: 0;
-    margin-right: 0;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo cib social" "logo menu menu";
   }
 }
 header .container .menu-bars {
+  grid-area: bars;
   border: none;
-  background-color: transparent;
   font-size: 25px;
+  background-color: transparent;
 }
 @media (min-width: 992px) {
   header .container .menu-bars {
     display: none;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
-header .container .menu {
+header .container .logotype {
+  grid-area: logo;
+  margin-right: 70px;
+}
+@media (min-width: 1200px) {
+  header .container .logotype {
+    margin-left: 130px;
+  }
+}
+@media (min-width: 1500px) {
+  header .container .logotype {
+    margin-left: 190px;
+  }
+}
+@media (min-width: 1700px) {
+  header .container .logotype {
+    margin-left: 250px;
+  }
+}
+@media (min-width: 1800px) {
+  header .container .logotype {
+    margin-left: 280px;
+  }
+}
+header .container .contactinformation-bar {
+  grid-area: cib;
   display: none;
-  flex: 1;
-  margin-left: 0;
-  margin-right: 0;
-  align-items: center;
-  text-align: center;
-}
-@media (min-width: 992px) {
-  header .container .menu {
-    display: block;
-  }
-}
-@media (min-width: 1200px) {
-  header .container .menu {
-    display: block;
-    margin-left: 299px;
-  }
-}
-header .container .menu .top-menu {
-  display: flex;
-  justify-content: flex-end;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #DAD9D3;
+  justify-content: flex-start;
   align-items: center;
 }
 @media (min-width: 1200px) {
-  header .container .menu .top-menu {
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-header .container .menu .top-menu .contact-information {
-  display: none;
-  align-items: center;
-}
-@media (min-width: 1200px) {
-  header .container .menu .top-menu .contact-information {
+  header .container .contactinformation-bar {
     display: flex;
-    margin-left: -240px;
   }
 }
-header .container .menu .top-menu .contact-information .content-box {
+header .container .contactinformation-bar .content-box {
   padding-right: 30px;
   margin-right: 30px;
   border-right: 1px solid #DAD9D3;
-  font-family: "Inter", sans-serif;
+  font-family: "inter", sans-serif;
   font-size: 15px;
   font-weight: 300;
 }
-header .container .menu .top-menu .contact-information .content-box i {
+header .container .contactinformation-bar .content-box i {
   margin-right: 5px;
   font-size: 1.2em;
 }
-header .container .menu .top-menu .contact-information .content-box.last {
+header .container .contactinformation-bar .content-box.last {
   border: none;
 }
-header .container .menu .top-menu .social-media a {
+header .container .socialmedia-bar {
+  grid-area: social;
+  display: none;
+}
+@media (min-width: 992px) {
+  header .container .socialmedia-bar {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  header .container .socialmedia-bar {
+    margin-right: 130px;
+  }
+}
+@media (min-width: 1500px) {
+  header .container .socialmedia-bar {
+    margin-right: 190px;
+  }
+}
+@media (min-width: 1700px) {
+  header .container .socialmedia-bar {
+    margin-right: 250px;
+  }
+}
+@media (min-width: 1800px) {
+  header .container .socialmedia-bar {
+    margin-right: 280px;
+  }
+}
+header .container .socialmedia-bar a {
   color: #191919;
   font-size: 1.3rem;
   margin-left: 10px;
 }
-header .container .menu .top-menu .social-media a:hover {
+header .container .socialmedia-bar a:hover {
   color: #7c7c7c;
 }
-header .container .menu .main-menu {
-  display: flex;
+header .container .menu {
+  grid-area: menu;
+  display: none;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid #DAD9D3;
+  margin-top: 10px;
   padding-top: 10px;
 }
-@media (min-width: 1200px) {
-  header .container .menu .main-menu {
-    margin-left: -235px;
-    margin-right: 0px;
+@media (min-width: 992px) {
+  header .container .menu {
+    display: flex;
   }
 }
-header .container .menu .main-menu nav a {
+header .container .menu nav a {
   display: inline-block;
   color: #191919;
   text-decoration: none;
   margin-right: 35px;
   position: relative;
 }
-header .container .menu .main-menu nav a.active {
+header .container .menu nav a.active {
   font-weight: 500px;
 }
-header .container .menu .main-menu nav a.active::after, header .container .menu .main-menu nav a:hover::after {
+header .container .menu nav a.active::after, header .container .menu nav a:hover::after {
   content: "";
   position: absolute;
   font-weight: 500;
@@ -497,6 +513,26 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .left-box .right-side .business img {
   margin-bottom: -28px;
   margin-top: 35px;
+}
+
+.btn-business {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.btn-business i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-business:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
 }
 
 .about {
