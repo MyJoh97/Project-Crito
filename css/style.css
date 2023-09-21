@@ -53,6 +53,24 @@ html, body {
   }
 }
 
+.section-title {
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+.section-title p {
+  color: #F94D1C;
+  font-family: "inter", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: -18px;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+
 header {
   background-color: #F0EFE9;
   padding: 16px;
@@ -375,7 +393,8 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   .advertising {
     display: flex;
     justify-content: center;
-    padding-top: 99px;
+    padding-top: 72px;
+    padding-bottom: 50px;
     gap: 50px;
   }
 }
@@ -613,13 +632,13 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   font-family: sans-serif;
   font-size: 15px;
   font-weight: bold;
-  position: absolute;
   margin-left: 7px;
+  margin-top: 4px;
 }
 @media (min-width: 960px) {
   .about .founder .pop-up h6 {
-    margin-top: 4px;
-    margin-left: 8px;
+    margin-top: 30px;
+    margin-left: 25px;
     font-size: 16px;
   }
 }
@@ -1026,6 +1045,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   transition: transform 0.8s;
 }
 .service-boxes .ser-btn {
+  display: none;
   border: solid 1px #191919;
   color: #191919;
   background-color: transparent;
@@ -1038,6 +1058,11 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   position: absolute;
   margin-top: 710px;
   text-align: center;
+}
+@media (min-width: 1400px) {
+  .service-boxes .ser-btn {
+    display: block;
+  }
 }
 .service-boxes .ser-btn i {
   position: absolute;
@@ -1386,4 +1411,38 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   .business-offering .desk-image img {
     margin-left: 1500px;
   }
+}
+
+.project-and-case .container {
+  width: 100%;
+}
+.project-and-case .container .section-title {
+  text-align: center;
+}
+.project-and-case .container .project-and-cases {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 0;
+  margin-top: 0;
+}
+@media (min-width: 1500px) {
+  .project-and-case .container .project-and-cases {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 590px;
+    margin-top: -650px;
+  }
+}
+@media (min-width: 2500px) {
+  .project-and-case .container .project-and-cases {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 800px;
+    margin-top: -800px;
+  }
+}
+.project-and-case .container .project-and-cases article img {
+  max-width: 100%;
+  height: auto;
 }
