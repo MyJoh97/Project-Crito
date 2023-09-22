@@ -54,8 +54,14 @@ html, body {
 }
 
 .section-title {
-  padding-top: 120px;
-  padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .section-title {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
 }
 .section-title p {
   color: #F94D1C;
@@ -785,11 +791,12 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .service-boxes {
   background-color: #F0EFE9;
   height: auto;
-  display: flex;
+  display: none;
   justify-content: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .service-boxes {
+    display: flex;
     height: 850px;
     margin-top: 120px;
   }
@@ -1109,7 +1116,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   justify-content: center;
 }
 .business-offering .container .side-left {
-  margin-top: 360px;
+  margin-top: 400px;
 }
 @media (min-width: 1200px) {
   .business-offering .container .side-left {
@@ -1118,14 +1125,15 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   }
 }
 .business-offering .container .side-left .section-title {
-  padding-top: 50px;
-  padding-bottom: 5px;
+  padding-top: 60px;
+  padding-bottom: 30px;
   font-size: 25px;
-  padding-left: 20px;
+  text-align: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   .business-offering .container .side-left .section-title {
-    padding-left: 0;
+    text-align: left;
+    padding-bottom: 5px;
   }
 }
 .business-offering .container .side-left .section-title p {
@@ -1170,6 +1178,8 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   font-weight: normal;
   color: RGBA(25, 25, 25, 0.7);
   margin-left: 77px;
+  display: block;
+  margin-top: 10px;
 }
 .business-offering .container .side-left .column-icons .offers-2 {
   padding-bottom: 15px;
@@ -1180,10 +1190,13 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   font-weight: bold;
   color: #191919;
   margin-left: 77px;
+  display: block;
+  margin-top: 18px;
 }
 @media (min-width: 800px) {
   .business-offering .container .side-left .column-icons .offers-2 strong {
     font-size: 22px;
+    margin-top: 10px;
   }
 }
 .business-offering .container .side-left .column-icons .offers-2 p {
@@ -1192,6 +1205,8 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   font-weight: normal;
   color: RGBA(25, 25, 25, 0.7);
   margin-left: 77px;
+  display: block;
+  margin-top: 10px;
 }
 .business-offering .container .side-left .column-icons .offers-3 {
   padding-bottom: 15px;
@@ -1202,10 +1217,13 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   font-weight: bold;
   color: #191919;
   margin-left: 77px;
+  display: block;
+  margin-top: 10px;
 }
 @media (min-width: 800px) {
   .business-offering .container .side-left .column-icons .offers-3 strong {
     font-size: 22px;
+    margin-top: 5px;
   }
 }
 .business-offering .container .side-left .column-icons .offers-3 p {
@@ -1214,6 +1232,8 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   font-weight: normal;
   color: RGBA(25, 25, 25, 0.7);
   margin-left: 77px;
+  display: block;
+  margin-top: 10px;
 }
 .business-offering .container .side-left .column-icons .offers-4 strong {
   font-family: "dm" sans-serif;
@@ -1221,10 +1241,13 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   font-weight: bold;
   color: #191919;
   margin-left: 77px;
+  display: block;
+  margin-top: 13px;
 }
 @media (min-width: 800px) {
   .business-offering .container .side-left .column-icons .offers-4 strong {
     font-size: 22px;
+    margin-top: 5px;
   }
 }
 .business-offering .container .side-left .column-icons .offers-4 p {
@@ -1233,6 +1256,8 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   font-weight: normal;
   color: RGBA(25, 25, 25, 0.7);
   margin-left: 77px;
+  display: block;
+  margin-top: 10px;
 }
 .business-offering .container .desk-image {
   position: relative;
@@ -1286,6 +1311,42 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .project-and-case .container .project-and-cases {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 30px;
+}
+@media (min-width: 768px) {
+  .project-and-case .container .project-and-cases {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.project-and-case .container .project-and-cases article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+.project-and-case .container .project-and-cases article img {
+  width: 100%;
+  height: auto;
+}
+.project-and-case .container .project-and-cases article h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 30px;
+  padding-bottom: 16px;
+  border-bottom: solid 1px #DAD9D3;
+}
+.project-and-case .container .project-and-cases article a {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  display: block;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #191919;
+}
+.project-and-case .container .project-and-cases article a i {
+  margin-left: 3px;
 }

@@ -57,8 +57,13 @@ html, body {
 }
 
 .section-title {
-  padding-top: 120px;
-  padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  @media (min-width: 768px) {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
 
   p {
     color: #F94D1C;
@@ -899,13 +904,13 @@ header {
 
   .service-boxes {
     background-color: #F0EFE9;
-    // height: auto;
     height: auto;
-    display: flex;
+    display: none;
     justify-content: center;
     
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1400px) {
+      display: flex;
       height: 850px;
       margin-top: 120px;
       
@@ -1267,7 +1272,7 @@ header {
     .container {
 
       .side-left {
-        margin-top: 360px;
+        margin-top: 400px;
 
         
         
@@ -1278,13 +1283,14 @@ header {
       
 
     .section-title {
-      padding-top: 50px;
-      padding-bottom: 5px;
+      padding-top: 60px;
+      padding-bottom: 30px;
       font-size: 25px;
-      padding-left: 20px;
+      text-align: center;
 
-      @media (min-width: 1000px) {
-        padding-left: 0;
+      @media (min-width: 768px) {
+        text-align: left;
+        padding-bottom: 5px;
       }
 
       p {
@@ -1336,6 +1342,8 @@ header {
           font-weight: normal;
           color: RGBA(25,25,25,0.7 );
           margin-left: 77px;
+          display: block;
+          margin-top: 10px;
         }
 
       }
@@ -1349,9 +1357,12 @@ header {
           font-weight: bold;
           color: #191919;
           margin-left: 77px;
+          display: block;
+          margin-top: 18px;
 
           @media (min-width: 800px) {
             font-size: 22px;
+            margin-top: 10px;
           }
         }
 
@@ -1361,6 +1372,8 @@ header {
           font-weight: normal;
           color: RGBA(25,25,25,0.7 );
           margin-left: 77px; 
+          display: block;
+          margin-top: 10px;
         }
       }
 
@@ -1375,9 +1388,12 @@ header {
           font-weight: bold;
           color: #191919;
           margin-left: 77px;
+          display: block;
+          margin-top: 10px;
 
           @media (min-width: 800px) {
             font-size: 22px;
+            margin-top: 5px;
           }
         }
 
@@ -1387,6 +1403,8 @@ header {
           font-weight: normal;
           color: RGBA(25,25,25,0.7 );
           margin-left: 77px; 
+          display: block;
+          margin-top: 10px;
         }
       }
 
@@ -1399,9 +1417,12 @@ header {
           font-weight: bold;
           color: #191919;
           margin-left: 77px;
+          display: block;
+          margin-top: 13px;
 
           @media (min-width: 800px) {
             font-size: 22px;
+            margin-top: 5px;
           }
         }
 
@@ -1410,7 +1431,9 @@ header {
           font-size: 16px;
           font-weight: normal;
           color: RGBA(25,25,25,0.7 );
-          margin-left: 77px; 
+          margin-left: 77px;
+          display: block;
+          margin-top: 10px; 
         }
       }
     }
@@ -1475,21 +1498,46 @@ header {
 
       .project-and-cases {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 30px;
 
+        @media (min-width: 768px) {
+          grid-template-columns: 1fr 1fr;
+        }
+
         article {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto 1fr auto;
 
           img {
-
+            width: 100%;
+            height: auto;
           }
 
           h3 {
-
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            padding-top: 30px;
+            padding-bottom: 16px;
+            border-bottom: solid 1px #DAD9D3;
           }
 
           a {
+            margin-right: 15px;
+            margin-bottom: 15px;
+            display: block;
+            text-align: right;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #191919;
 
+            i {
+              margin-left: 3px;
+            }
           }
         }
 
