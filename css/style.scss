@@ -56,6 +56,29 @@ html, body {
 
 }
 
+.btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+
+
+  i {
+    margin-left: 8px;
+    font-size: 0.9em;
+  }
+
+  &:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #191919;
+    color: #191919;
+  }
+}
+
 .section-title {
   padding-top: 40px;
   padding-bottom: 30px;
@@ -81,6 +104,12 @@ html, body {
   }
 }
 
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 
 header {
   background-color: #F0EFE9;
@@ -1505,14 +1534,21 @@ header {
           grid-template-columns: 1fr 1fr;
         }
 
-        article {
+        .project {
           display: grid;
           grid-template-columns: 1fr;
           grid-template-rows: auto 1fr auto;
+          color: #191919;
+          text-decoration: none;
 
           img {
             width: 100%;
             height: auto;
+
+            &:hover {
+              transition: transform 0.6s ease;
+              transform: scale(1.1);
+            }
           }
 
           h3 {
@@ -1524,7 +1560,7 @@ header {
             border-bottom: solid 1px #DAD9D3;
           }
 
-          a {
+          .readmore {
             margin-right: 15px;
             margin-bottom: 15px;
             display: block;
@@ -1538,10 +1574,130 @@ header {
             i {
               margin-left: 3px;
             }
+
+          }
+
+          &:hover .readmore {
+            text-decoration: underline;
           }
         }
 
 
       }
+
+      .center-content {
+        margin-top: 50px;
+        margin-bottom: 90px;
+      }
+    }
+  }
+
+
+  .meet-our-team {
+    background-color: RGBA(240,208,130,0.93 );
+    display: flex;
+    justify-content: center;
+
+    .container {
+
+    
+
+        .section-title {
+          padding-top: 70px;
+          padding-bottom: 30px;
+          text-align: center;
+          
+          @media (min-width: 1400px) {
+            text-align: left;
+          }
+          
+          p {
+            font-size: 18px;
+
+            @media (min-width: 1400px) {
+              font-size: 18px;
+            }
+          }
+
+          h2 {
+            font-size: 35px;
+
+            @media (min-width: 1400px) {
+              font-size: 45px;
+            }
+          }
+        }
+
+        .center-content {
+          
+
+          @media (min-width: 1400px) {
+            margin-left: 1100px;
+            position: relative;
+            top: -120px;
+          }
+          
+          
+
+          .btn-black {
+            background-color: transparent;
+            color: #191919;
+            font-weight: normal;
+            font-family: 'inter', sans-serif;
+
+            &:hover {
+              background-color: #191919;
+              color: #FFFFFF;
+            }
+          }
+        }
+      
+
+        .team-img {
+          display: grid;
+          grid-template-columns: 1r;
+          gap: 30px;
+          justify-content: center;
+          padding-bottom: 30px;
+          margin-bottom: 120px;
+          
+          @media (min-width: 1400px) {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          }
+
+          .member-1, .member-2, .member-3, .member-4 {
+            text-align: left;
+
+            img {
+              max-width: 100%;
+            }
+            
+
+            strong {
+              color: #191919;
+              font-family: 'dm', sans-serif;
+              font-size: 18px;
+              font-weight: bold;
+
+              @media (min-width: 1400px) {
+                font-size: 22px;
+              }
+            }
+
+            p {
+              color: RGBA(25,25,25,0.7 );
+              font-size: 15px;
+              font-weight: 500;
+              font-family: 'inter', sans-serif;
+
+              @media (min-width: 1400px) {
+                font-size: 16px;
+              }
+            }
+          }
+
+          
+        }
+
     }
   }
