@@ -92,7 +92,7 @@ html, body {
     color: #F94D1C;
     font-family: 'inter', sans-serif;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 500;
     margin-bottom: -18px;
   }
 
@@ -1604,7 +1604,7 @@ header {
 
         .section-title {
           padding-top: 70px;
-          padding-bottom: 30px;
+          margin-bottom: -100px;
           text-align: center;
           
           @media (min-width: 1400px) {
@@ -1634,7 +1634,7 @@ header {
           @media (min-width: 1400px) {
             margin-left: 1100px;
             position: relative;
-            top: -120px;
+            top: -85px;
           }
           
           
@@ -1644,6 +1644,16 @@ header {
             color: #191919;
             font-weight: normal;
             font-family: 'inter', sans-serif;
+            width: 130px;
+
+            i {
+              position: absolute;
+              margin-top: 1px;
+              margin-left: 18px;
+              font-weight: bold;
+              font-size: 16px;
+
+            }
 
             &:hover {
               background-color: #191919;
@@ -1670,6 +1680,7 @@ header {
 
             img {
               max-width: 100%;
+              margin-bottom: 20px;
             }
             
 
@@ -1692,6 +1703,7 @@ header {
 
               @media (min-width: 1400px) {
                 font-size: 16px;
+                margin-top: 10px;
               }
             }
           }
@@ -1699,5 +1711,236 @@ header {
           
         }
 
+      .circles {
+        display: flex;
+        justify-content: center;
+        margin-top: -90px;
+        gap: 7px;
+
+        .circle {
+          background-color:  #19191942;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          display: inline-block;
+          margin-right: 10px;
+        }
+
+        .dark {
+          background-color: #191919;
+        }
+
+      }
+    }
+  }
+
+  .all-reviews {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: RGBA(240,208,130,0.93 );
+        width: auto;
+        height: 1100px;
+
+    .container {
+      display: flex;
+      justify-content: center;
+
+      .square-background {
+        width: 1520px;
+        height: 950px;
+        background-color: #FFFFFF;
+
+
+      .client-reviews {
+        display: flex;
+        margin-left: 150px;
+        gap: 100px;
+
+        .client-1, .client-2, .client-3 {
+          text-align: left;
+
+
+          p {
+            font-family: 'inter', sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 34px;
+          }
+
+          .reviewer-1, .reviewer-2, .reviewer-3 {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            margin-top: 35px;
+            
+
+          strong {
+            font-family: 'dm', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            color: #191919;
+            margin-left: 100px;
+            margin-top: -65px;
+          }
+
+          p {
+            font-family: 'inter', sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            color: #f94c1c;
+            margin-left: 100px;
+            margin-top: -1px;
+          }
+
+
+            img {
+              width: 70px;
+              height: 70px;
+              border: solid 2px #19191918;
+              border-radius: 50%;
+            }
+          }
+          
+          
+
+          
+        }
+
+
+      }
+      
+      .center-content {
+        margin-top: 80px;
+      }
+    }
+    }
+  }
+
+  .article-and-news {
+    
+
+    .container {
+      
+      
+
+      .upper-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 360px;
+
+
+        .section-title {
+          text-align: left;
+        }
+
+        .center-content {
+          margin-top: 50px;
+        
+          a {
+            background-color: #FFFFFF;
+            color: #191919;
+            
+            i {
+              font-weight: bold;
+            }
+          }
+        }
+
+      }
+
+      .news-section {
+        display: flex;
+        justify-content: center;
+        margin-top: -80px;
+
+        .news-articles {
+          display: grid;
+          grid-template-columns: auto 1fr auto;
+          gap: 30px;
+
+          .news {
+            text-decoration: none;
+
+            .image-container-dates {
+              position: relative;
+
+              img {
+
+              }
+
+              .dates {
+                height: 64px;
+                width: 56px;
+                background-color: #F9D783;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: -20px;
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                margin-top: 15px;
+                margin-left: 15px;
+
+                strong {
+                  font-family: 'dm', sans-serif;
+                  font-size: 22px;
+                  font-weight: bold;
+                  color: #191919;
+                  padding-top: 20px;
+                }
+
+                p {
+                  font-size: 16px;
+                  font-family: 'inter';
+                  font-weight: normal;
+                  color: RGBA(25,25,25,0.7 );
+                  margin-top: -5px;
+                }
+              }
+
+            }  
+
+            p {
+              font-size: 16px;
+              font-family: 'inter', sans-serif;
+              font-weight: normal;
+              line-height: 28px;
+              color: #6A6C71;
+            }
+
+            strong {
+              font-family: 'dm', sans-serif;
+              font-size: 22px;
+              font-weight: bold;
+              line-height: 33px;
+              color: #191919;
+            }
+          }
+        }
+      }
+      .circles {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+
+        .circle {
+          background-color:  #19191942;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          display: inline-block;
+          margin-right: 10px;
+        }
+
+        .dark {
+          background-color: #191919;
+        }
+
+      }
     }
   }

@@ -87,7 +87,7 @@ html, body {
   color: #F94D1C;
   font-family: "inter", sans-serif;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 500;
   margin-bottom: -18px;
 }
 .section-title h2 {
@@ -1397,7 +1397,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .meet-our-team .container .section-title {
   padding-top: 70px;
-  padding-bottom: 30px;
+  margin-bottom: -100px;
   text-align: center;
 }
 @media (min-width: 1400px) {
@@ -1425,7 +1425,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   .meet-our-team .container .center-content {
     margin-left: 1100px;
     position: relative;
-    top: -120px;
+    top: -85px;
   }
 }
 .meet-our-team .container .center-content .btn-black {
@@ -1433,6 +1433,14 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   color: #191919;
   font-weight: normal;
   font-family: "inter", sans-serif;
+  width: 130px;
+}
+.meet-our-team .container .center-content .btn-black i {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 18px;
+  font-weight: bold;
+  font-size: 16px;
 }
 .meet-our-team .container .center-content .btn-black:hover {
   background-color: #191919;
@@ -1456,6 +1464,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .meet-our-team .container .team-img .member-1 img, .meet-our-team .container .team-img .member-2 img, .meet-our-team .container .team-img .member-3 img, .meet-our-team .container .team-img .member-4 img {
   max-width: 100%;
+  margin-bottom: 20px;
 }
 .meet-our-team .container .team-img .member-1 strong, .meet-our-team .container .team-img .member-2 strong, .meet-our-team .container .team-img .member-3 strong, .meet-our-team .container .team-img .member-4 strong {
   color: #191919;
@@ -1477,5 +1486,182 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 @media (min-width: 1400px) {
   .meet-our-team .container .team-img .member-1 p, .meet-our-team .container .team-img .member-2 p, .meet-our-team .container .team-img .member-3 p, .meet-our-team .container .team-img .member-4 p {
     font-size: 16px;
+    margin-top: 10px;
   }
+}
+.meet-our-team .container .circles {
+  display: flex;
+  justify-content: center;
+  margin-top: -90px;
+  gap: 7px;
+}
+.meet-our-team .container .circles .circle {
+  background-color: rgba(25, 25, 25, 0.2588235294);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+.meet-our-team .container .circles .dark {
+  background-color: #191919;
+}
+
+.all-reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: RGBA(240, 208, 130, 0.93);
+  width: auto;
+  height: 1100px;
+}
+.all-reviews .container {
+  display: flex;
+  justify-content: center;
+}
+.all-reviews .container .square-background {
+  width: 1520px;
+  height: 950px;
+  background-color: #FFFFFF;
+}
+.all-reviews .container .square-background .client-reviews {
+  display: flex;
+  margin-left: 150px;
+  gap: 100px;
+}
+.all-reviews .container .square-background .client-reviews .client-1, .all-reviews .container .square-background .client-reviews .client-2, .all-reviews .container .square-background .client-reviews .client-3 {
+  text-align: left;
+}
+.all-reviews .container .square-background .client-reviews .client-1 p, .all-reviews .container .square-background .client-reviews .client-2 p, .all-reviews .container .square-background .client-reviews .client-3 p {
+  font-family: "inter", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 34px;
+}
+.all-reviews .container .square-background .client-reviews .client-1 .reviewer-1, .all-reviews .container .square-background .client-reviews .client-1 .reviewer-2, .all-reviews .container .square-background .client-reviews .client-1 .reviewer-3, .all-reviews .container .square-background .client-reviews .client-2 .reviewer-1, .all-reviews .container .square-background .client-reviews .client-2 .reviewer-2, .all-reviews .container .square-background .client-reviews .client-2 .reviewer-3, .all-reviews .container .square-background .client-reviews .client-3 .reviewer-1, .all-reviews .container .square-background .client-reviews .client-3 .reviewer-2, .all-reviews .container .square-background .client-reviews .client-3 .reviewer-3 {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+.all-reviews .container .square-background .client-reviews .client-1 .reviewer-1 strong, .all-reviews .container .square-background .client-reviews .client-1 .reviewer-2 strong, .all-reviews .container .square-background .client-reviews .client-1 .reviewer-3 strong, .all-reviews .container .square-background .client-reviews .client-2 .reviewer-1 strong, .all-reviews .container .square-background .client-reviews .client-2 .reviewer-2 strong, .all-reviews .container .square-background .client-reviews .client-2 .reviewer-3 strong, .all-reviews .container .square-background .client-reviews .client-3 .reviewer-1 strong, .all-reviews .container .square-background .client-reviews .client-3 .reviewer-2 strong, .all-reviews .container .square-background .client-reviews .client-3 .reviewer-3 strong {
+  font-family: "dm", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #191919;
+  margin-left: 100px;
+  margin-top: -65px;
+}
+.all-reviews .container .square-background .client-reviews .client-1 .reviewer-1 p, .all-reviews .container .square-background .client-reviews .client-1 .reviewer-2 p, .all-reviews .container .square-background .client-reviews .client-1 .reviewer-3 p, .all-reviews .container .square-background .client-reviews .client-2 .reviewer-1 p, .all-reviews .container .square-background .client-reviews .client-2 .reviewer-2 p, .all-reviews .container .square-background .client-reviews .client-2 .reviewer-3 p, .all-reviews .container .square-background .client-reviews .client-3 .reviewer-1 p, .all-reviews .container .square-background .client-reviews .client-3 .reviewer-2 p, .all-reviews .container .square-background .client-reviews .client-3 .reviewer-3 p {
+  font-family: "inter", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #f94c1c;
+  margin-left: 100px;
+  margin-top: -1px;
+}
+.all-reviews .container .square-background .client-reviews .client-1 .reviewer-1 img, .all-reviews .container .square-background .client-reviews .client-1 .reviewer-2 img, .all-reviews .container .square-background .client-reviews .client-1 .reviewer-3 img, .all-reviews .container .square-background .client-reviews .client-2 .reviewer-1 img, .all-reviews .container .square-background .client-reviews .client-2 .reviewer-2 img, .all-reviews .container .square-background .client-reviews .client-2 .reviewer-3 img, .all-reviews .container .square-background .client-reviews .client-3 .reviewer-1 img, .all-reviews .container .square-background .client-reviews .client-3 .reviewer-2 img, .all-reviews .container .square-background .client-reviews .client-3 .reviewer-3 img {
+  width: 70px;
+  height: 70px;
+  border: solid 2px rgba(25, 25, 25, 0.0941176471);
+  border-radius: 50%;
+}
+.all-reviews .container .square-background .center-content {
+  margin-top: 80px;
+}
+
+.article-and-news .container .upper-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 360px;
+}
+.article-and-news .container .upper-title .section-title {
+  text-align: left;
+}
+.article-and-news .container .upper-title .center-content {
+  margin-top: 50px;
+}
+.article-and-news .container .upper-title .center-content a {
+  background-color: #FFFFFF;
+  color: #191919;
+}
+.article-and-news .container .upper-title .center-content a i {
+  font-weight: bold;
+}
+.article-and-news .container .news-section {
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+}
+.article-and-news .container .news-section .news-articles {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 30px;
+}
+.article-and-news .container .news-section .news-articles .news {
+  text-decoration: none;
+}
+.article-and-news .container .news-section .news-articles .news .image-container-dates {
+  position: relative;
+}
+.article-and-news .container .news-section .news-articles .news .image-container-dates .dates {
+  height: 64px;
+  width: 56px;
+  background-color: #F9D783;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: -20px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.article-and-news .container .news-section .news-articles .news .image-container-dates .dates strong {
+  font-family: "dm", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #191919;
+  padding-top: 20px;
+}
+.article-and-news .container .news-section .news-articles .news .image-container-dates .dates p {
+  font-size: 16px;
+  font-family: "inter";
+  font-weight: normal;
+  color: RGBA(25, 25, 25, 0.7);
+  margin-top: -5px;
+}
+.article-and-news .container .news-section .news-articles .news p {
+  font-size: 16px;
+  font-family: "inter", sans-serif;
+  font-weight: normal;
+  line-height: 28px;
+  color: #6A6C71;
+}
+.article-and-news .container .news-section .news-articles .news strong {
+  font-family: "dm", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  color: #191919;
+}
+.article-and-news .container .circles {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.article-and-news .container .circles .circle {
+  background-color: rgba(25, 25, 25, 0.2588235294);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+.article-and-news .container .circles .dark {
+  background-color: #191919;
 }
