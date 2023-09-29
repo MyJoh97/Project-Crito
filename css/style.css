@@ -113,12 +113,17 @@ header {
   background-color: #F0EFE9;
   padding: 16px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  header {
+    justify-content: center;
+  }
 }
 header .container {
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "logo bars";
   overflow: hidden;
 }
@@ -133,14 +138,17 @@ header .container .menu-bars {
   border: none;
   font-size: 25px;
   background-color: transparent;
+  margin-left: 4rem;
 }
 @media (min-width: 992px) {
   header .container .menu-bars {
     display: none;
+    margin-left: 0;
   }
 }
 header .container .logotype {
   grid-area: logo;
+  margin-left: 2rem;
 }
 @media (min-width: 1200px) {
   header .container .logotype {
@@ -497,6 +505,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   padding-top: 0;
   height: auto;
   width: auto;
+  position: relative;
 }
 @media (min-width: 800px) {
   .left-box {
@@ -571,7 +580,11 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   }
 }
 .left-box .right-side {
-  display: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 17rem;
+  position: absolute;
+  margin-left: 1rem;
 }
 @media (min-width: 1200px) {
   .left-box .right-side {
@@ -582,6 +595,9 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
          column-gap: 110px;
     margin-right: auto;
     margin-bottom: auto;
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
   }
 }
 @media (min-width: 1500px) {
@@ -603,20 +619,38 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .left-box .right-side .business h5 {
   font-family: sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 33px;
   color: #191919;
   opacity: 1;
   margin-bottom: 15px;
 }
+@media (min-width: 768px) {
+  .left-box .right-side .business h5 {
+    font-size: 22px;
+  }
+}
 .left-box .right-side .business p {
   font-family: "inter";
-  font-size: 16px;
+  font-size: 15px;
   font-weight: normal;
   text-align: left;
   line-height: 25px;
   color: RGBA(25, 25, 25, 0.7);
+}
+@media (min-width: 768px) {
+  .left-box .right-side .business p {
+    font-size: 16px;
+  }
+}
+.left-box .right-side .business p br {
+  display: none;
+}
+@media (min-width: 768px) {
+  .left-box .right-side .business p br {
+    display: block;
+  }
 }
 .left-box .right-side .business img {
   margin-bottom: -28px;
@@ -647,7 +681,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   display: flex;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 120px;
+  margin-top: 36rem;
 }
 @media (min-width: 1200px) {
   .about {
@@ -655,6 +689,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
     width: 1320px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 7rem;
   }
 }
 .about .founder {
@@ -1641,6 +1676,10 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   background-color: #FFFFFF;
   color: #191919;
 }
+.article-and-news .container .upper-title .center-content a:hover {
+  background-color: #191919;
+  color: #FFFFFF;
+}
 .article-and-news .container .upper-title .center-content a i {
   font-weight: bold;
 }
@@ -1656,6 +1695,9 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 }
 .article-and-news .container .news-section .news-articles .news {
   text-decoration: none;
+}
+.article-and-news .container .news-section .news-articles .news:hover {
+  text-decoration: underline;
 }
 .article-and-news .container .news-section .news-articles .news .image-container-dates {
   position: relative;
