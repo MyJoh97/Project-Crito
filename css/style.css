@@ -1708,16 +1708,18 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
     margin-top: 0;
     display: flex;
     justify-content: center;
-    gap: 29rem;
-    margin-right: block;
+    gap: 26rem;
+    margin-right: 0;
   }
 }
 .article-and-news .container .upper-title .section-title {
   text-align: center;
+  padding-left: 3rem;
 }
 @media (min-width: 768px) {
   .article-and-news .container .upper-title .section-title {
     text-align: left;
+    margin-left: -4rem;
   }
 }
 .article-and-news .container .upper-title .section-title p {
@@ -1744,10 +1746,11 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
 .article-and-news .container .upper-title .center-content {
   margin-top: -1.5rem;
   margin-bottom: 3rem;
+  margin-left: 3rem;
 }
 @media (min-width: 768px) {
   .article-and-news .container .upper-title .center-content {
-    margin-top: 50px;
+    margin-top: 6rem;
   }
 }
 .article-and-news .container .upper-title .center-content a {
@@ -2106,6 +2109,7 @@ footer .bottom .socialmedia-bar {
   footer .bottom .socialmedia-bar {
     display: flex;
     gap: 30px;
+    margin-bottom: 2rem;
   }
 }
 footer .bottom .socialmedia-bar i {
